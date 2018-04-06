@@ -39,15 +39,15 @@ public class PasswordHash {
         return hex(hashPassword(password.toCharArray(), STATIC_SALT.getBytes(), 8192, 256));
     }
     
-    public static void main(String[] args) {
-        //System.out.println(hashPassword("badpassword", "1234"));
-        
-        String passwordHash= "353bc8f31e34a73455d839d23e541ff864400835a17d4bd076dc88bdf5d7238d";
-        
-        if (passwordHash.equals(hashPassword("catsarecool"))) {
-            System.out.println("Awesome, it's you!");
-        } else {
-            System.out.println("Go away hacker!");
-        }
-    }
+//    public static void main(String[] args) {
+//        //System.out.println(hashPassword("badpassword", "1234"));
+//        
+//        String passwordHash= "353bc8f31e34a73455d839d23e541ff864400835a17d4bd076dc88bdf5d7238d";
+//        
+//        if (passwordHash.equals(hashPassword("catsarecool"))) {
+//            System.out.println("Awesome, it's you!");
+//        } else {
+//            System.out.println("Go away hacker!");
+//        }
+//    }
 }
